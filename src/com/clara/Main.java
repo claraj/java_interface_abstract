@@ -1,8 +1,5 @@
 package com.clara;
 
-
-import java.util.Scanner;
-
 /**
  *
  * Demo of Java interfaces and abstract classes
@@ -35,6 +32,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
+
         WeatherSurvey weatherSurvey = new WeatherSurvey();
         weatherSurvey.start();
 

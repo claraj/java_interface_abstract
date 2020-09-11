@@ -10,6 +10,12 @@ public class WeatherSurvey implements ResponseListener {
 
     @Override
     public void responseCollected(String response) {
+        // Process the response received
         System.out.println("The current weather is " + response);
+    }
+
+    @Override
+    public void noResponseCollected() {
+        System.out.println("There was no response, unknown weather.");
     }
 }
