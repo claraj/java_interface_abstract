@@ -18,9 +18,9 @@ public class RudeDataCollector extends DataCollector {
         String response = new Scanner(System.in).nextLine();
         System.out.println("Time for something else to deal with whatever you typed.");
         if (response.isEmpty()) {
-            listener.responseCollected(response);
-        } else {
             listener.noResponseCollected();
+        } else {
+            listener.responseCollected(response);
         }
     }
 }
